@@ -5,17 +5,15 @@ Its written with React 16.13.1 and uses React Hooks.the component accepts the fo
 
 | Props     |   Default Value |          Description           |
 | --------- | --------------: | :----------------------------: |
-| keyword   | Albert_Einstein |           Page title           |
-| locale    |              en |        initial language        |
+| keyword   | Albert_Einstein |           Page Slug            |
+| locale    |              en |        Initial language        |
 | classname |           empty | Custom className for Component |
 
-There is not any required Prop If they are not set or fails then the default ones will be used as fallback.
+If the Props are not set the defaults will be used.
 
 To increase the speed I only request content text and languages list from the Wikipedia API by adding `prop='text|langlinks'` to API Url.
 
-The title of the page or its page ID in one language is different from its title or page ID in another language, and sending a same title or page ID for all language API’s causes get Not Found page in some languages. To solve this problem, the list of available languages in the requested page has been saved in state and right title for each language has been used in API request.
-
-Because I don’t like the Dropdown original style, I made a simple component to display languages and their country flags.
+The slug of the page is different in each language and can not be used for other languages, to solve this issue, after fetching the result from api we get the related slug for each language and save it in state, then when switching languages we simply use the state to find the right keyword in that language and feed it to API.
 
 # Demo
 
