@@ -8,7 +8,7 @@ function App() {
   return (
     <div className='App'>
       <Header />
-      <WikiApi keyword='Albert_Einstein' locale='en' classname='' />
+      <WikiApi keyword='Albert_Einstein' />
       <Footer />
     </div>
   );
