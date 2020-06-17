@@ -1,0 +1,1423 @@
+/*! CSS Used   */
+.CategoryTreeChildren {
+  margin-left: 1.25em;
+}
+.CategoryTreeBullet {
+  cursor: default;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.CategoryTreeToggle {
+  color: #0645ad;
+}
+.CategoryTreeTag {
+  margin-top: 0.5ex;
+  margin-bottom: 0.5ex;
+}
+.CategoryTreeSection {
+  direction: ltr;
+}
+.mw-cite-backlink,
+.cite-accessibility-label {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.mw-references-columns {
+  -webkit-column-width: 30em;
+  -moz-column-width: 30em;
+  column-width: 30em;
+}
+.mw-references-columns li {
+  -webkit-column-break-inside: avoid;
+  page-break-inside: avoid;
+  break-inside: avoid-column;
+}
+ol.references {
+  counter-reset: mw-ref-extends-parent list-item;
+}
+ol.references > li {
+  counter-increment: mw-ref-extends-parent;
+  counter-reset: mw-ref-extends-child;
+}
+sup.reference {
+  unicode-bidi: -moz-isolate;
+  unicode-bidi: -webkit-isolate;
+  unicode-bidi: isolate;
+  white-space: nowrap;
+  font-weight: normal;
+  font-style: normal;
+}
+ol.references li:target,
+sup.reference:target {
+  background-color: #eaf3ff;
+}
+@media print {
+  .mw-cite-backlink {
+    display: none;
+  }
+}
+.mediaContainer {
+  position: relative;
+  display: block;
+}
+.thumb .mediaContainer {
+  margin: 0 auto;
+}
+.mw-collapsible-toggle {
+  float: right;
+}
+.mw-content-ltr .mw-collapsible-toggle {
+  float: right;
+}
+.toctogglecheckbox:checked ~ ul {
+  display: none;
+}
+@media screen {
+  .toctogglespan {
+    font-size: 94%;
+  }
+  .toctogglelabel {
+    cursor: pointer;
+    color: #0645ad;
+  }
+  .toctogglelabel:hover {
+    text-decoration: underline;
+  }
+  .toctogglecheckbox:focus + .toctitle .toctogglelabel {
+    text-decoration: underline;
+    outline: dotted 1px;
+    outline: auto -webkit-focus-ring-color;
+  }
+  .toctogglecheckbox:checked + .toctitle .toctogglelabel:after {
+    content: 'show';
+  }
+}
+@media print {
+  .toctogglecheckbox:checked + .toctitle {
+    display: none;
+  }
+}
+@media screen {
+  .mw-body-content p {
+    margin: 0.5em 0;
+  }
+  .mw-body-content h2 {
+    margin-top: 1em;
+    font-size: 1.5em;
+  }
+  .mw-body-content h3,
+  .mw-body-content h4 {
+    margin-top: 0.3em;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    line-height: 1.6;
+  }
+  .mw-body-content h3 {
+    font-size: 1.2em;
+  }
+  .mw-body-content h3,
+  .mw-body-content h4 {
+    font-weight: bold;
+  }
+  .mw-body-content h4 {
+    font-size: 100%;
+  }
+  .mw-body-content .toc h2 {
+    font-family: sans-serif;
+    font-size: 100%;
+  }
+  ul {
+    list-style-image: url(https://en.wikipedia.org/w/skins/Vector/resources/skins.vector.styles/images/bullet-icon.svg?d4515);
+  }
+  .mw-parser-output .external {
+    background-position: center right;
+    background-repeat: no-repeat;
+    background-image: url(https://en.wikipedia.org/w/skins/Vector/resources/skins.vector.styles/images/external-link-ltr-icon.png?325de);
+    background-image: linear-gradient(transparent, transparent),
+      url(https://en.wikipedia.org/w/skins/Vector/resources/skins.vector.styles/images/external-link-ltr-icon.svg?b4b84);
+    padding-right: 13px;
+  }
+  .mw-body-content h2 {
+    margin-bottom: 0.25em;
+    padding: 0;
+    font-family: 'Linux Libertine', 'Georgia', 'Times', serif;
+    line-height: 1.3;
+  }
+}
+@media print {
+  .toc {
+    padding: 10px;
+    font-family: 'Linux Libertine', 'Georgia', 'Times', serif;
+  }
+  .thumb,
+  table,
+  ol,
+  dl,
+  ul,
+  h3,
+  h4 {
+    font-family: sans-serif;
+  }
+  img {
+    font-family: 'Linux Libertine', 'Georgia', 'Times', serif;
+  }
+  a:not(.image) {
+    border-bottom: 1px solid #aaa;
+  }
+  h2 {
+    overflow: hidden;
+    border-bottom: 2px solid #000000;
+  }
+  h3,
+  h4 {
+    margin: 30px 0 0;
+  }
+  h2,
+  h3,
+  h4 {
+    padding: 0;
+    position: relative;
+  }
+  h2 {
+    font-size: 18pt;
+    line-height: 24pt;
+    margin-bottom: 0.25em;
+  }
+  h3 {
+    font-size: 14pt;
+    line-height: 20pt;
+  }
+  h4 {
+    font-size: 12pt;
+    line-height: 16pt;
+  }
+  p {
+    font-size: 12pt;
+    line-height: 16pt;
+    margin-top: 5px;
+    text-align: justify;
+  }
+  p:before {
+    content: '';
+    display: block;
+    width: 120pt;
+    overflow: hidden;
+  }
+  ol,
+  ul {
+    margin: 10px 0 0 1.6em;
+    padding: 0;
+  }
+  ol li,
+  ul li {
+    padding: 2px 0;
+    font-size: 12pt;
+  }
+  table ul li {
+    font-size: inherit;
+  }
+  .toc {
+    page-break-before: avoid;
+    page-break-after: avoid;
+    background: none;
+    border: 0;
+    display: table;
+  }
+  .toc a {
+    border: 0;
+    font-weight: normal;
+  }
+  .toc > ul > li {
+    margin-bottom: 4px;
+    font-weight: bold;
+  }
+  .toc ul {
+    margin: 0;
+    list-style: none;
+  }
+  .toc ul ul {
+    padding-left: 30px;
+  }
+  .toc li.toclevel-1 > a {
+    font-size: 12pt;
+    font-weight: bold;
+  }
+  .toc .tocnumber {
+    display: none;
+  }
+}
+@media screen {
+  a {
+    text-decoration: none;
+    color: #0645ad;
+    background: none;
+  }
+  a:not([href]) {
+    cursor: pointer;
+  }
+  a:visited {
+    color: #0b0080;
+  }
+  a:active {
+    color: #faa700;
+  }
+  a:hover,
+  a:focus {
+    text-decoration: underline;
+  }
+  a.new {
+    color: #ba0000;
+  }
+  a.mw-selflink {
+    color: inherit;
+    font-weight: bold;
+    text-decoration: inherit;
+  }
+  a.mw-selflink:hover {
+    cursor: inherit;
+    text-decoration: inherit;
+  }
+  a.mw-selflink:active,
+  a.mw-selflink:visited {
+    color: inherit;
+  }
+  a.new:visited {
+    color: #a55858;
+  }
+  .mw-parser-output a.extiw,
+  .mw-parser-output a.extiw:active {
+    color: #36b;
+  }
+  .mw-parser-output a.extiw:visited {
+    color: #636;
+  }
+  .mw-parser-output a.extiw:active {
+    color: #b63;
+  }
+  .mw-parser-output a.external {
+    color: #36b;
+  }
+  .mw-parser-output a.external:visited {
+    color: #636;
+  }
+  .mw-parser-output a.external:active {
+    color: #b63;
+  }
+  img {
+    border: 0;
+    vertical-align: middle;
+  }
+  h2,
+  h3,
+  h4 {
+    color: #000;
+    background: none;
+    font-weight: normal;
+    margin: 0;
+    overflow: hidden;
+    padding-top: 0.5em;
+    padding-bottom: 0.17em;
+    border-bottom: 1px solid #a2a9b1;
+  }
+  h2 {
+    font-size: 150%;
+  }
+  h3,
+  h4 {
+    border-bottom: 0;
+    font-weight: bold;
+  }
+  h3 {
+    font-size: 128%;
+  }
+  h4 {
+    font-size: 116%;
+  }
+  h2 {
+    margin-bottom: 0.6em;
+  }
+  h3,
+  h4 {
+    margin-bottom: 0.3em;
+  }
+  p {
+    margin: 0.4em 0 0.5em 0;
+  }
+  p img {
+    margin: 0;
+  }
+  ul {
+    margin: 0.3em 0 0 1.6em;
+    padding: 0;
+  }
+  ol {
+    margin: 0.3em 0 0 3.2em;
+    padding: 0;
+    list-style-image: none;
+  }
+  li {
+    margin-bottom: 0.1em;
+  }
+  dt {
+    font-weight: bold;
+    margin-bottom: 0.1em;
+  }
+  dl {
+    margin-top: 0.2em;
+    margin-bottom: 0.5em;
+  }
+  dd {
+    margin-left: 1.6em;
+    margin-bottom: 0.1em;
+  }
+  table {
+    font-size: 100%;
+  }
+  .toc {
+    border: 1px solid #a2a9b1;
+    background-color: #f8f9fa;
+    padding: 5px;
+    font-size: 95%;
+  }
+  .toc {
+    display: table;
+    padding: 7px;
+  }
+  .toc h2 {
+    display: inline;
+    border: 0;
+    padding: 0;
+    font-size: 100%;
+    font-weight: bold;
+  }
+  .toc .toctitle {
+    text-align: center;
+  }
+  .toc ul {
+    list-style-type: none;
+    list-style-image: none;
+    margin-left: 0;
+    padding: 0;
+    text-align: left;
+  }
+  .toc ul ul {
+    margin: 0 0 0 2em;
+  }
+  .tocnumber,
+  .toctext {
+    display: table-cell;
+    text-decoration: inherit;
+  }
+  .tocnumber {
+    color: #202122;
+    padding-left: 0;
+    padding-right: 0.5em;
+  }
+  .mw-content-ltr .tocnumber {
+    padding-left: 0;
+    padding-right: 0.5em;
+  }
+  div.thumb {
+    margin-bottom: 0.5em;
+    width: auto;
+    background-color: transparent;
+  }
+  div.thumbinner {
+    border: 1px solid #c8ccd1;
+    padding: 3px;
+    background-color: #f8f9fa;
+    font-size: 94%;
+    text-align: center;
+    overflow: hidden;
+  }
+  html .thumbimage {
+    background-color: #fff;
+    border: 1px solid #c8ccd1;
+  }
+  html .thumbcaption {
+    border: 0;
+    line-height: 1.4em;
+    padding: 3px;
+    font-size: 94%;
+    text-align: left;
+  }
+  .magnify {
+    float: right;
+    margin-left: 3px;
+  }
+  .magnify a {
+    display: block;
+    text-indent: 15px;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 15px;
+    height: 11px;
+    background-image: url(https://en.wikipedia.org/w/resources/src/mediawiki.skinning/images/magnify-clip-ltr.png?4f704);
+    background-image: linear-gradient(transparent, transparent),
+      url(https://en.wikipedia.org/w/resources/src/mediawiki.skinning/images/magnify-clip-ltr.svg?8330e);
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  .mw-content-ltr .thumbcaption {
+    text-align: left;
+  }
+  .mw-content-ltr .magnify {
+    float: right;
+    margin-left: 3px;
+    margin-right: 0;
+  }
+  .mw-content-ltr .magnify a {
+    background-image: url(https://en.wikipedia.org/w/resources/src/mediawiki.skinning/images/magnify-clip-ltr.png?4f704);
+    background-image: linear-gradient(transparent, transparent),
+      url(https://en.wikipedia.org/w/resources/src/mediawiki.skinning/images/magnify-clip-ltr.svg?8330e);
+  }
+  div.tright {
+    margin: 0.5em 0 1.3em 1.4em;
+  }
+  div.tleft {
+    margin: 0.5em 1.4em 1.3em 0;
+  }
+  body.mw-hide-empty-elt .mw-empty-elt {
+    display: none;
+  }
+  .mw-content-ltr {
+    direction: ltr;
+  }
+  .sitedir-ltr input {
+    direction: ltr;
+  }
+  abbr[title] {
+    border-bottom: 1px dotted;
+    cursor: help;
+  }
+  .mw-content-ltr .thumbcaption {
+    text-align: left;
+  }
+  .mw-content-ltr .magnify {
+    float: right;
+  }
+  a.new {
+    color: #ba0000;
+  }
+  .plainlinks a.external {
+    background: none !important;
+    padding: 0 !important;
+  }
+  .wikitable {
+    background-color: #f8f9fa;
+    color: #202122;
+    margin: 1em 0;
+    border: 1px solid #a2a9b1;
+    border-collapse: collapse;
+  }
+  .wikitable > * > tr > th,
+  .wikitable > * > tr > td {
+    border: 1px solid #a2a9b1;
+    padding: 0.2em 0.4em;
+  }
+  .wikitable > * > tr > th {
+    background-color: #eaecf0;
+    text-align: center;
+  }
+  .mw-content-ltr ul {
+    margin: 0.3em 0 0 1.6em;
+    padding: 0;
+  }
+  .mw-content-ltr ol {
+    margin: 0.3em 0 0 3.2em;
+    padding: 0;
+  }
+  .mw-content-ltr dd {
+    margin-left: 1.6em;
+    margin-right: 0;
+  }
+  .toc ul {
+    margin: 0.3em 0;
+  }
+  .mw-content-ltr .toc ul {
+    text-align: left;
+  }
+  .mw-content-ltr .toc ul ul {
+    margin: 0 0 0 2em;
+  }
+  .toc .toctitle {
+    direction: ltr;
+  }
+  div.tright {
+    clear: right;
+    float: right;
+  }
+  div.tleft {
+    float: left;
+    clear: left;
+  }
+  sup {
+    line-height: 1;
+  }
+}
+@media print {
+  .noprint,
+  .magnify,
+  .mw-cite-backlink {
+    display: none;
+  }
+  a {
+    background: none !important;
+    padding: 0 !important;
+  }
+  a,
+  a.external,
+  a.new {
+    color: inherit !important;
+    text-decoration: inherit !important;
+  }
+  .mw-parser-output a.external.text:after,
+  .mw-parser-output a.external.autonumber:after {
+    content: ' (' attr(href) ')';
+    word-break: break-all;
+    word-wrap: break-word;
+  }
+  .mw-parser-output a.external.text[href^='//']:after
+  {
+    content: ' (https:' attr(href) ')';
+  }
+  dt {
+    font-weight: bold;
+  }
+  h2,
+  h3,
+  h4 {
+    font-weight: bold;
+    page-break-after: avoid;
+    page-break-before: avoid;
+  }
+  p {
+    margin: 1em 0;
+    line-height: 1.2;
+    orphans: 3;
+    widows: 3;
+  }
+  img,
+  .wikitable,
+  .thumb {
+    page-break-inside: avoid;
+  }
+  img {
+    border: 0;
+    vertical-align: middle;
+  }
+  sup {
+    line-height: 1;
+  }
+  ul {
+    list-style-type: square;
+  }
+  .toc {
+    background-color: #f9f9f9;
+    border: 1pt solid #aaa;
+    padding: 5px;
+    display: table;
+  }
+  .tocnumber,
+  .toctext {
+    display: table-cell;
+  }
+  .tocnumber {
+    padding-left: 0;
+    padding-right: 0.5em;
+  }
+  .mw-content-ltr .tocnumber {
+    padding-left: 0;
+    padding-right: 0.5em;
+  }
+  div.tright {
+    float: right;
+    clear: right;
+  }
+  div.tleft {
+    float: left;
+    clear: left;
+  }
+  div.tleft {
+    margin: 0.5em 1.4em 1.3em 0;
+  }
+  div.tright {
+    margin: 0.5em 0 1.3em 1.4em;
+  }
+  div.thumb {
+    background-color: transparent;
+    width: auto;
+  }
+  div.thumb a {
+    border-bottom: 0;
+  }
+  div.thumbinner {
+    background-color: #fff;
+    border: 0;
+    border-radius: 2px;
+    padding: 5px;
+    font-size: 10pt;
+    color: #666;
+    text-align: center;
+    overflow: hidden;
+    min-width: 100px;
+  }
+  html .thumbcaption {
+    text-align: left;
+    line-height: 1.4;
+    padding: 3px;
+  }
+  .wikitable {
+    background: #fff;
+    margin: 1em 0;
+    border: 1pt solid #aaa;
+    border-collapse: collapse;
+    font-size: 10pt;
+  }
+  .wikitable > * > tr > th,
+  .wikitable > * > tr > td {
+    background: #fff !important;
+    color: #000 !important;
+    border: 1pt solid #aaa;
+    padding: 0.4em 0.6em;
+  }
+  .wikitable > * > tr > th {
+    text-align: center;
+  }
+}
+/*! CSS Used from: Embedded */
+.mw-collapsible-toggle {
+  float: right;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.mw-collapsible-toggle-default:before {
+  content: '[';
+}
+.mw-collapsible-toggle-default:after {
+  content: ']';
+}
+.mw-collapsible-toggle {
+  cursor: pointer;
+}
+.mwEmbedPlayer {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.play-btn-large {
+  width: 70px;
+  height: 53px;
+  background: url(https://en.wikipedia.org/w/extensions/TimedMediaHandler/resources/mwembed/skins/common/images/player_big_play_button.png?69699);
+  position: absolute;
+  cursor: pointer;
+  border: none !important;
+}
+.play-btn-large:hover {
+  background: url(https://en.wikipedia.org/w/extensions/TimedMediaHandler/resources/mwembed/skins/common/images/player_big_play_button_hover.png?97c2a);
+}
+.CategoryTreeToggleHandlerAttached {
+  cursor: pointer;
+}
+.cite-accessibility-label {
+  top: -99999px;
+  clip: rect(1px, 1px, 1px, 1px);
+  position: absolute !important;
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+/*! CSS Used from: Embedded */
+.ui-helper-clearfix:before,
+.ui-helper-clearfix:after {
+  content: '';
+  display: table;
+  border-collapse: collapse;
+}
+.ui-helper-clearfix:after {
+  clear: both;
+}
+.ui-helper-clearfix {
+  zoom: 1;
+}
+.ui-icon {
+  display: block;
+  text-indent: -99999px;
+  overflow: hidden;
+  background-repeat: no-repeat;
+}
+.ui-widget {
+  font-family: sans-serif;
+  font-size: 0.8em;
+}
+.ui-widget-content {
+  border: 1px solid #cccccc;
+
+  color: #362b36;
+}
+.ui-widget-header {
+  border: 1px solid #aed0ea;
+
+  color: #222222;
+  font-weight: bold;
+}
+.ui-state-default,
+.ui-widget-content .ui-state-default,
+.ui-widget-header .ui-state-default {
+  border: 1px solid #aed0ea;
+  background: #d7ebf9
+    url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAABkEAIAAACY3hF0AAAAfUlEQVR4AWN6Lfu1789dJgYwwEGNUv8fMHxg+M3EYM8wn+Ex0/+7//MZrjL9m/ffn+E00/9aBjuGo0z/Yv7r/z/E9C/2vx7DQab/tv/lGPYw/bP5Lw+kQIL/gYKxDCC5f3Mh+vb+j2e4wPT/HkM+wxWm//X/9/9/S4KTRikAkkU5P+PzOxYAAAAASUVORK5CYII=)
+    50% 50% repeat-x;
+  font-weight: normal;
+  color: #2779aa;
+}
+.ui-state-default a,
+.ui-state-default a:link,
+.ui-state-default a:visited {
+  color: #2779aa;
+  text-decoration: none;
+}
+.ui-icon {
+  width: 16px;
+  height: 16px;
+}
+.ui-icon-comment {
+  background-position: -128px -96px;
+}
+.ui-icon-play {
+  background-position: 0 -160px;
+}
+.ui-icon-volume-on {
+  background-position: -144px -160px;
+}
+.ui-corner-all {
+  -moz-border-radius-topleft: 3px;
+  -webkit-border-top-left-radius: 3px;
+  -khtml-border-top-left-radius: 3px;
+  border-top-left-radius: 3px;
+}
+.ui-corner-all {
+  -moz-border-radius-topright: 3px;
+  -webkit-border-top-right-radius: 3px;
+  -khtml-border-top-right-radius: 3px;
+  border-top-right-radius: 3px;
+}
+.ui-corner-all,
+.ui-corner-bl {
+  -moz-border-radius-bottomleft: 3px;
+  -webkit-border-bottom-left-radius: 3px;
+  -khtml-border-bottom-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+.ui-corner-all {
+  -moz-border-radius-bottomright: 3px;
+  -webkit-border-bottom-right-radius: 3px;
+  -khtml-border-bottom-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+.ui-slider {
+  position: relative;
+  text-align: left;
+}
+.ui-slider .ui-slider-handle {
+  position: absolute;
+  z-index: 2;
+  width: 1.2em;
+  height: 1.2em;
+  cursor: default;
+}
+.ui-slider .ui-slider-range {
+  position: absolute;
+  z-index: 1;
+  font-size: 0.7em;
+  display: block;
+  border: 0;
+  background-position: 0 0;
+}
+.ui-slider-horizontal {
+  height: 0.8em;
+}
+.ui-slider-horizontal .ui-slider-handle {
+  top: -0.3em;
+  margin-left: -0.6em;
+}
+.ui-slider-horizontal .ui-slider-range {
+  top: 0;
+  height: 100%;
+}
+.ui-slider-horizontal .ui-slider-range-min {
+  left: 0;
+}
+/*! CSS Used from: Embedded */
+.mwPlayerContainer {
+  width: 100%;
+  height: 100%;
+}
+.mwPlayerContainer {
+  position: relative;
+  height: 100%;
+  background: #000;
+}
+.videoHolder {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  overflow: hidden;
+}
+.mwEmbedPlayer {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.ui-icon_link {
+  padding: 0.4em 1em 0.4em 20px;
+  text-decoration: none;
+  position: relative;
+}
+.ui-icon_link span.ui-icon {
+  margin: 0 5px 0 0;
+  position: absolute;
+  left: 0.2em;
+  right: auto;
+  top: 50%;
+  margin-top: -8px;
+  zoom: 1;
+}
+.control-bar .ui-icon_link {
+  border: 0;
+}
+.k-player {
+  color: #fff;
+  background-color: #000;
+}
+.k-player .ui-widget-content {
+  color: #555;
+  z-index: 1503;
+}
+.k-player .ui-widget-content a {
+  color: #555;
+}
+.k-player .play-btn-large {
+  width: 70px;
+  height: 55px;
+  background: url(https://en.wikipedia.org/w/extensions/TimedMediaHandler/resources/mwembed/EmbedPlayer/skins/kskin/images/ksprite.png?3c85d)
+    no-repeat 0px -433px;
+  position: absolute;
+  cursor: pointer;
+  border: none;
+}
+.k-player .play-btn-large:hover {
+  background: url(https://en.wikipedia.org/w/extensions/TimedMediaHandler/resources/mwembed/EmbedPlayer/skins/kskin/images/ksprite.png?3c85d)
+    no-repeat 0px -377px;
+}
+.k-player .control-bar .ui-icon {
+  background: transparent
+    url(https://en.wikipedia.org/w/extensions/TimedMediaHandler/resources/mwembed/EmbedPlayer/skins/kskin/images/ksprite.png?3c85d)
+    no-repeat scroll 0 -48px;
+}
+.k-player .ui-state-default .ui-icon-comment {
+  background-position: 0px -65px;
+}
+.k-player .ui-state-default .ui-icon-play {
+  background: url(https://en.wikipedia.org/w/extensions/TimedMediaHandler/resources/mwembed/EmbedPlayer/skins/kskin/images/ksprite.png?3c85d)
+    no-repeat 0 0;
+}
+.k-player .control-bar {
+  border: 1px solid #c8c8c8;
+  border-top: 0px;
+  border-right: 0px;
+  height: 21px;
+  padding: 2px 0 0 6px;
+  margin-top: 0px;
+  background: url(https://en.wikipedia.org/w/extensions/TimedMediaHandler/resources/mwembed/EmbedPlayer/skins/kskin/images/ksprite.png?3c85d)
+    repeat-x 0 -81px;
+  font: normal 11px arial, sans-serif;
+  color: #555;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  z-index: 2;
+}
+.k-player .ui-corner-all {
+  border-radius: 5px 5px 5px 5px !important;
+  -webkit-border-radius: 5px 5px 5px 5px !important;
+  -moz-border-radius: 5px 5px 5px 5px !important;
+}
+.k-player .time-disp {
+  border: medium none;
+  display: inline;
+  color: #555555;
+  font: 11px arial, sans-serif;
+  line-height: 20px;
+  overflow: hidden;
+  width: 39px;
+  float: right;
+}
+.k-player .lButton {
+  cursor: pointer;
+  float: left;
+  list-style: none outside none;
+  margin: 2px;
+  padding: 0px 0;
+  width: 19px;
+  height: 16px;
+  position: relative;
+  background: none repeat scroll 0 0 transparent !important;
+  border: medium none;
+}
+.k-player .rButton {
+  cursor: pointer;
+  float: right;
+  list-style: none outside none;
+  margin-top: 2px;
+  padding: 0px 0;
+  width: 22px;
+  height: 16px;
+  position: relative;
+  background: none repeat scroll 0 0 transparent !important;
+  border: medium none;
+}
+.k-player .k-options {
+  border: 1px solid #aaaaaa !important;
+  color: #555555 !important;
+  float: right;
+  height: 21px;
+  margin-top: -2px;
+  margin-right: 0px;
+  width: 50px;
+  background: none repeat scroll 0 0 transparent !important;
+  font-family: Lucida Grande, Lucida Sans, Arial, sans-serif;
+  font-size: 11px;
+  text-transform: uppercase;
+  text-align: center;
+}
+.k-player .k-options span {
+  position: relative;
+  top: 4px;
+}
+.k-player .volume_control {
+  margin-right: 2px;
+  width: 16px;
+}
+.k-player .volume_control span {
+  margin-right: 0px;
+}
+.k-player .volume-slider {
+  width: 20px;
+  direction: ltr;
+}
+.k-player .volume-slider .ui-slider-range {
+  -moz-border-radius: 0 0 0 0;
+  background: url(https://en.wikipedia.org/w/extensions/TimedMediaHandler/resources/mwembed/EmbedPlayer/skins/kskin/images/ksprite.png?3c85d)
+    repeat-x scroll -66px -306px transparent !important;
+  height: 17px;
+  position: absolute;
+}
+.k-player .volume-slider a.ui-slider-handle {
+  background: none repeat scroll 0 0 transparent;
+  border: medium none;
+  display: block;
+  height: 18px;
+  margin: -3px 5px 0 -1px;
+  position: absolute;
+  width: 8px;
+}
+.k-player .ui-slider-horizontal .ui-slider-range-min {
+  left: 0;
+}
+/*! CSS Used from: https://en.wikipedia.org/w/load.php?lang=en&modules=site.styles&only=styles&skin=vector */
+cite {
+  font-style: inherit;
+}
+q {
+  quotes: '"' '"' "'" "'";
+}
+small {
+  font-size: 85%;
+}
+.mw-body-content sup {
+  font-size: 80%;
+}
+.citation:target {
+  background-color: #def;
+  background-color: rgba(0, 127, 255, 0.133);
+}
+.citation {
+  word-wrap: break-word;
+}
+ol.references,
+div.reflist {
+  font-size: 90%;
+  margin-bottom: 0.5em;
+}
+div.reflist ol.references {
+  font-size: 100%;
+  margin-bottom: 0;
+  list-style-type: inherit;
+}
+div.columns {
+  margin-top: 0.3em;
+}
+div.columns ul {
+  margin-top: 0;
+}
+div.columns li {
+  -webkit-column-break-inside: avoid;
+  page-break-inside: avoid;
+  break-inside: avoid-column;
+}
+.hlist dl,
+.hlist ul {
+  margin: 0;
+  padding: 0;
+}
+.hlist dd,
+.hlist dt,
+.hlist li {
+  margin: 0;
+  display: inline;
+}
+.hlist ul ul {
+  display: inline;
+}
+.hlist dt:after {
+  content: ':';
+}
+.hlist dd:after,
+.hlist li:after {
+  content: ' · ';
+  font-weight: bold;
+}
+.hlist dd:last-child:after,
+.hlist li:last-child:after {
+  content: none;
+}
+.hlist li li:first-child:before {
+  content: ' (';
+  font-weight: normal;
+}
+.hlist li li:last-child:after {
+  content: ')';
+  font-weight: normal;
+}
+.plainlist ul {
+  line-height: inherit;
+  list-style: none none;
+  margin: 0;
+}
+.plainlist ul li {
+  margin-bottom: 0;
+}
+.navbox {
+  box-sizing: border-box;
+  border: 1px solid #a2a9b1;
+  width: 100%;
+  clear: both;
+  font-size: 88%;
+  text-align: center;
+  padding: 1px;
+  margin: 1em auto 0;
+}
+.navbox + .navbox {
+  margin-top: -1px;
+}
+.navbox-inner,
+.navbox-subgroup {
+  width: 100%;
+}
+.navbox-group,
+.navbox-title,
+.navbox-abovebelow {
+  padding: 0.25em 1em;
+  line-height: 1.5em;
+  text-align: center;
+}
+th.navbox-group {
+  white-space: nowrap;
+  text-align: right;
+}
+.navbox,
+.navbox-subgroup {
+  background-color: #fdfdfd;
+}
+.navbox-list {
+  line-height: 1.5em;
+  border-color: #fdfdfd;
+}
+tr + tr > .navbox-abovebelow,
+tr + tr > .navbox-group,
+tr + tr > .navbox-image,
+tr + tr > .navbox-list {
+  border-top: 2px solid #fdfdfd;
+}
+.navbox th,
+.navbox-title {
+  background-color: #ccccff;
+}
+.navbox-abovebelow,
+th.navbox-group,
+.navbox-subgroup .navbox-title {
+  background-color: #ddddff;
+}
+.navbox-subgroup .navbox-group {
+  background-color: #e6e6ff;
+}
+.navbox-even {
+  background-color: #f7f7f7;
+}
+.navbox-odd {
+  background-color: transparent;
+}
+.navbox .hlist td dl,
+.navbox .hlist td ul,
+.navbox td.hlist ul {
+  padding: 0.125em 0;
+}
+.navbar {
+  display: inline;
+  font-size: 88%;
+  font-weight: normal;
+}
+.navbar ul {
+  display: inline-block;
+  white-space: nowrap;
+}
+.mw-body-content .navbar ul {
+  line-height: inherit;
+}
+.navbar li {
+  word-spacing: -0.125em;
+}
+.navbar.mini li abbr[title] {
+  font-variant: small-caps;
+  border-bottom: none;
+  text-decoration: none;
+  cursor: inherit;
+}
+.navbox .navbar {
+  display: block;
+  font-size: 100%;
+}
+.navbox-title .navbar {
+  float: left;
+  text-align: left;
+  margin-right: 0.5em;
+}
+.mw-parser-output .mw-collapsible-toggle {
+  font-weight: normal;
+  text-align: right;
+  padding-right: 0.2em;
+  padding-left: 0.2em;
+}
+.infobox {
+  border: 1px solid #a2a9b1;
+  border-spacing: 3px;
+  background-color: #f8f9fa;
+  color: black;
+  margin: 0.5em 0 0.5em 1em;
+  padding: 0.2em;
+  float: right;
+  clear: right;
+  font-size: 88%;
+  line-height: 1.5em;
+}
+.infobox td,
+.infobox th {
+  vertical-align: top;
+  text-align: left;
+}
+.mw-parser-output a[href$='.pdf'].external {
+  background: url(//upload.wikimedia.org/wikipedia/commons/2/23/Icons-mini-file_acrobat.gif)
+    no-repeat right;
+  padding-right: 18px;
+}
+td.mbox-text {
+  border: none;
+  padding: 0.25em 0.9em;
+  width: 100%;
+}
+td.mbox-image {
+  border: none;
+  padding: 2px 0 2px 0.9em;
+  text-align: center;
+}
+html body.mediawiki .mbox-small {
+  clear: right;
+  float: right;
+  margin: 4px 0 4px 1em;
+  box-sizing: border-box;
+  width: 238px;
+  font-size: 88%;
+  line-height: 1.25em;
+}
+.IPA a:link,
+.IPA a:visited {
+  text-decoration: none !important;
+}
+.hatnote {
+  font-style: italic;
+}
+div.hatnote {
+  padding-left: 1.6em;
+  margin-bottom: 0.5em;
+}
+div.hatnote + div.hatnote {
+  margin-top: -0.5em;
+}
+.nowrap,
+.nowraplinks a,
+.nowraplinks .selflink {
+  white-space: nowrap;
+}
+.thumbinner {
+  min-width: 100px;
+}
+span.texhtml {
+  font-family: 'Nimbus Roman No9 L', 'Times New Roman', Times, serif;
+  font-size: 118%;
+  line-height: 1;
+}
+span.texhtml {
+  white-space: nowrap;
+}
+.texhtml {
+  -moz-font-feature-settings: 'lnum', 'tnum', 'kern' 0;
+  -webkit-font-feature-settings: 'lnum', 'tnum', 'kern' 0;
+  font-feature-settings: 'lnum', 'tnum', 'kern' 0;
+  font-variant-numeric: lining-nums tabular-nums;
+  font-kerning: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .toclimit-4 {
+    margin-right: 0%;
+    margin-left: 0%;
+    width: 19em;
+  }
+  .navbox {
+    display: none;
+  }
+
+  .infobox {
+    width: 15em;
+    font-size: 75%;
+  }
+
+  .wikitable {
+    font-size: 59%;
+  }
+}
+
+@media print {
+  .ns-0 .navbox,
+  .ns-0 .hatnote,
+  .ns-0 .metadata,
+  .sistersitebox,
+  .navbar,
+  span.mw-collapsible-toggle {
+    display: none !important;
+  }
+  .mw-parser-output table.mw-collapsed > * > tr {
+    display: table-row !important;
+  }
+  #content a.external.text:after,
+  #content a.external.autonumber:after {
+    word-wrap: break-word;
+  }
+  .infobox {
+    border: solid 1px #aaa;
+    background-color: #fff;
+    border-spacing: 0;
+    border-collapse: collapse;
+    width: 180pt !important;
+  }
+  .infobox > * > tr > td,
+  .infobox > * > tr > th {
+    padding: 2px 5px;
+    border-bottom: 1px solid #eaecf0;
+  }
+  .infobox a,
+  .infobox > * > tr:last-child > td {
+    border: 0;
+  }
+  .references a,
+  .reference a {
+    color: black !important;
+  }
+  .reference a {
+    border-bottom: 0;
+  }
+  ol.references,
+  div.reflist,
+  cite * {
+    font-size: inherit !important;
+  }
+  .references li {
+    color: #666;
+    line-height: 14pt;
+  }
+}
+/*! CSS Used from: Embedded */
+.mw-parser-output cite.citation {
+  font-style: inherit;
+}
+.mw-parser-output .citation q {
+  quotes: '"' '"' "'" "'";
+}
+.mw-parser-output .citation .cs1-lock-free a {
+  background-image: url(//upload.wikimedia.org/wikipedia/commons/thumb/6/65/Lock-green.svg/9px-Lock-green.svg.png);
+  background-image: linear-gradient(transparent, transparent),
+    url(//upload.wikimedia.org/wikipedia/commons/6/65/Lock-green.svg);
+  background-repeat: no-repeat;
+  background-size: 9px;
+  background-position: right 0.1em center;
+}
+.mw-parser-output .citation .cs1-lock-limited a,
+.mw-parser-output .citation .cs1-lock-registration a {
+  background-image: url(//upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Lock-gray-alt-2.svg/9px-Lock-gray-alt-2.svg.png);
+  background-image: linear-gradient(transparent, transparent),
+    url(//upload.wikimedia.org/wikipedia/commons/d/d6/Lock-gray-alt-2.svg);
+  background-repeat: no-repeat;
+  background-size: 9px;
+  background-position: right 0.1em center;
+}
+.mw-parser-output .cs1-maint {
+  display: none;
+  color: #33aa33;
+  margin-left: 0.3em;
+}
+.mw-parser-output .cs1-format {
+  font-size: 95%;
+}
+/*! CSS Used from: Embedded */
+.mw-parser-output .nobold {
+  font-weight: normal;
+}
+
+.infobox,
+.biography {
+  width: 22em;
+  float: left;
+  margin: 1em;
+  padding: 0.5em;
+  border: 1px solid #a2a9b1;
+}

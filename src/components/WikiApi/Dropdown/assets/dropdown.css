@@ -1,0 +1,112 @@
+/* Dropdown Button */
+.dropbtn {
+  display: inline-block;
+  background-image: url('./images/translation.svg');
+  background-size: 50px 45px;
+  background-position: 8px 7px;
+  background-repeat: no-repeat;
+  height: 60px;
+  background-color: #51ac58;
+  color: white;
+  padding: 16px;
+  font-size: 19px;
+  font-weight: 600;
+  width: 232px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover,
+.dropbtn:focus {
+  background-color: #3e8e41;
+  outline: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content */
+.dropdown-content {
+  margin: 0 0;
+  position: absolute;
+  background-color: #f6f6f6;
+  min-width: 230px;
+  border: 1px solid #ddd;
+  z-index: 1;
+}
+.dropdown-content li {
+  border-bottom: 1px #cac7c7 solid;
+}
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  background-position: 20px 5px;
+  background-size: 30px;
+  background-repeat: no-repeat;
+  display: block;
+  text-align: left;
+  font-weight: 700;
+  padding-left: 72px;
+  background-image: url(./images/flag.svg);
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+a.en {
+  background-image: url(./images/uk.svg);
+}
+
+a.de {
+  background-image: url(./images/de.svg);
+}
+
+a.ru {
+  background-image: url(./images/ru.svg);
+}
+
+a.it {
+  background-image: url(./images/it.svg);
+}
+a.fr {
+  background-image: url(./images/fr.svg);
+}
+
+a.tr {
+  background-image: url(./images/tr.svg);
+}
+
+a.ar {
+  background-image: url(./images/ar.svg);
+}
+
+a.hi {
+  background-image: url(./images/hi.svg);
+}
+
+a.ja {
+  background-image: url(./images/ja.svg);
+}
+
+a.zh {
+  background-image: url(./images/zh.svg);
+}
+
+a.es {
+  background-image: url(./images/es.svg);
+}
+
+.dropdown:focus,
+.dropbtn:focus,
+.dropdown-content:focus,
+#myInput:focus {
+  border: 0px solid red !important;
+}
