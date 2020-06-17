@@ -93,7 +93,7 @@ export default class WikiApi extends Component {
   render() {
     const { wikiData, errorMessage } = this.state;
     const htmlContent = wikiData || errorMessage;
-    const userClassname = this.props.class || '';
+    const userClassname = this.props.classname || '';
     return (
       <div data-test='index-container' className={`wiki-api ${userClassname}`}>
         {this.state.langList.length > 0 && (
